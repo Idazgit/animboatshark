@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.bateau {
+  display: flex;
+
+  align-items: center;
+  animation: boat 10s;
+}
+.bateauimg {
+  height: 200px;
+}
+.requinimg {
+  height: 300px;
+  z-index: 1;
+}
+@keyframes boat {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1550px);
+    opacity: 0;
+    z-index: -1;
+  }
+}
